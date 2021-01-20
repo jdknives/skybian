@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-https://github.com/skycoin/skywire/releases/download/v0.4.0-test2/skywire-v0.4.0-test2-linux-arm64.tar.gz
-
 ARCHIVE_NAME="skywire-v0.4.0-rc2-linux-arm64.tar.gz"
 RELEASE_URL="https://github.com/skycoin/skywire/releases/download/0.4.0-rc2/$ARCHIVE_NAME"
 
