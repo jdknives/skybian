@@ -13,8 +13,8 @@ SYSTEMD_DIR="/etc/systemd/system"
 SYSTEMD_FILE_OLD="/etc/systemd/system/skywire-startup.service"
 
 main() {
-	prepare
 	prepare_old
+	prepare
 	update_binaries
 	update_configs
 	finalize
@@ -26,7 +26,6 @@ prepare_old() {
 	if [ -f "$SYSTEMD_FILE_OLD" ]; then
 	curl -o /etc/systemd/system/skywire-visor.service https://raw.githubusercontent.com/skycoin/skybian/master/static/skywire-visor.service
 	systemctl daemon-reload
-	systemctl enable skywire-visor.service
 	systemctl disable skywire-startup.service
 }
 
