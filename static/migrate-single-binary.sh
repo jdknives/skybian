@@ -27,6 +27,7 @@ prepare_old() {
 	curl -o /etc/systemd/system/skywire-visor.service https://raw.githubusercontent.com/skycoin/skybian/master/static/skywire-visor.service
 	systemctl daemon-reload
 	systemctl disable skywire-startup.service
+	fi
 }
 
 prepare() {
